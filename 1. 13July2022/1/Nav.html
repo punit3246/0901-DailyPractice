@@ -9,12 +9,12 @@
 </head>
 
 <body>
- 
+  <header>Header
   <nav>
     <a href="#" target="_blank">Link1</a>
   </nav>
-
-
+  </header>
+  <section id="content">
  <!-- <progress value="32" max="100"></progress> -->
   <form action="Index.html" method="post">
     <h1>form</h1>
@@ -24,8 +24,19 @@
     <br><br>
     Password:<input type="password" name="pass" value="" minlength="8" required autofocus/>
     <br><br><br>
+    Hobbies:
+    <input type="checkbox" name="reading" value="reading"/>Reading
+    <input type="checkbox" name="dancing" value="dancing"/>dancing
+    <input type="checkbox" name="singing" value="singing"/>singing
+    <br><br>
+    Gender:<input type="radio" name="gender" id="male" value="male"/>male
+    <input type="radio" name="gender" id="female" value="female"/>female<br><br>
     <input type="submit" value="Submit" />
   </form>
+  </section>
+ 
+
+  <footer>Footer</footer>
 </body>
 
 </html>
