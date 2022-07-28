@@ -1,0 +1,10 @@
+tr #th1Heading{
+    background-color: blueviolet;
+    color: brown;
+}
+table th,td{
+    border: 1px solid;
+    border: double; 
+    border-color:blue;
+    
+}
