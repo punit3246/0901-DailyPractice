@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFn() {
+            let n1 = document.getElementById("n1").value;
+            
+            n1 = Number(n1);
+            
+            if (n1%2==0){
+                document.getElementById("p1").innerHTML = "Number is even";
+            }
+            else{
+                document.getElementById("p1").innerHTML = "Number is odd";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1" />
+    <button onclick="myFn()">Click</button>
+    <p id="p1"></p>
+</body>
+</html>
