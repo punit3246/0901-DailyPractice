@@ -1,0 +1,16 @@
+.image{
+    background-image: url('D:\0901-DailyPractice\JavaScript React\Desert.jpg');
+    height: 20cm;
+}
+.one{
+    background-color: red;
+    color: white;
+}
+.two{
+    background-color: blue;
+    color: white;
+}
+.three{
+    background-color: darkblue;
+    color: white;
+}
