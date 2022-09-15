@@ -1,13 +1,16 @@
 import React from 'react';
-import './Test.css';
-function Test() {
-    return(
-  <div className="image">
-    <h1 className="one">This is the test component</h1>
-    <h1 className="two">This is the test component</h1>
-    <h1 className="three">This is the test component</h1>
-  </div>
-    )
-}
+
+const Test = () => {
+ 
+ return (
+   <div >
+     <h1 style={test}>Heading</h1>
+   </div>
+ )
+};
+const test = {
+  backgroundColor: 'black',
+  color: 'yellow',
+};
 
 export default Test;
