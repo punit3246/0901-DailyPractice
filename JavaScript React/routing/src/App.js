@@ -1,16 +1,11 @@
 import React from 'react';
-import "./App.css";
-import Home from './Home';
-import Test from './Test';
-
-import "bootstrap/dist/css/bootstrap.min.css";
+import Form from './Form';
 const App=()=>{
     return(
-        <div className="App">
-            <h1>Hello World</h1>
-            <h2>This is heading two</h2>
-            <Home/>
-            <Test/>
+        //React fragment
+        <div>
+            <h1>Hello</h1>
+            <Form/>
         </div>
     );
 }
