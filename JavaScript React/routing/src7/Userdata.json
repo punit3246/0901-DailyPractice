@@ -1,0 +1,20 @@
+[
+    {
+        "Name":"Punit",
+        "Mobile":1234,
+        "Email":"abc@gmail.com",
+        "Address":"Rajpura"
+    },
+    {
+        "Name":"Paras",
+        "Mobile":5678,
+        "Email":"xyz@gmail.com",
+        "Address":"Panchkuka"
+    },
+    {
+        "Name":"Preet",
+        "Mobile":1357,
+        "Email":"def@gmail.com",
+        "Address":"Mohali"
+    }
+]

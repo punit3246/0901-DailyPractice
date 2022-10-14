@@ -1,0 +1,27 @@
+{
+  "user": [
+    {
+      "name": "rafeeq",
+      "username": "qureshi",
+      "email": "qureshi.rafiq111@gmail.com",
+      "phone": "9596393658",
+      "id": 1
+    },
+    {
+      "name": "Najma",
+      "username": "Yaseen",
+      "email": "najma@gmail.com",
+      "phone": "123456",
+      "id": 2
+    },
+    {
+      "name": "Deepa",
+      "username": "Depaj123",
+      "email": "deepa@gmail.com",
+      "phone": "2345",
+      "id": 3
+    }
+   
+   
+  ]
+}
