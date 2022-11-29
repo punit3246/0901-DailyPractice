@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #todo h1 {
+            text-align: center;
+            margin-top: 2%;
+           
+            
+
+        }
+        #list {
+            margin-top: 7%;
+            margin-left: 35%;
+            width: 30%;
+            height: 10cm;
+            background-color: white;
+            border-radius: 15%  ;
+            padding: 5%;
+            background: linear-gradient(45deg,white,pink 80%);
+            overflow: hidden;
+
+        }
+        #input {
+            width: 100%;
+            margin-left: -20%;
+            margin-right: 2%;
+
+        }
+        
+    </style>
+</head>
+<body >
+   <div class="container" id="todo">
+    <h1 >ToDo LIST</h1>
+
+    
+    <div id="list">
+    <ul>
+        <div id="form " class="d-flex">
+        
+            <form action="/" method="post" class="d-flex">
+                <input id="input" class="form-control "  type="text" name="newitem" autocomplete="off">
+                <button class="btn btn-success" type="submit">Add</button>
+                
+            </form>
+        </div>
+        
+        <% for( let i=0;i<newListItems.length;i++) { %>
+            <li><%= newListItems[i] %></li>
+       <% }%>
+       
+    </ul>
+</div>
+</div>
+</body>
+</html>
