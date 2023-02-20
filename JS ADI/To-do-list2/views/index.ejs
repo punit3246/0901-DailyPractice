@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title> ToDo App </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+<body>
+  <style>
+    div{
+      border-color: purple;
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+    li{
+      text-align: center;
+    }
+    h2{
+      border: 3cm;
+      border-color: white;
+    }
+  </style>
+  <div class="container">
+<h2> ToDo List App </h2>
+<form id="image" action ="/addtask" method="POST">
+      <input type="text" name="newtask" placeholder="add new task">        
+      <button> Add Task </button>
+      <h2 > Added Task </h2>
+        <% task.forEach(function(i){ %>
+        <li><input type="radio" name="check" value="<%=i.sl_no %>" /><label for="<%=i.sl_no%>"> <%=i.task %> </label></li>
+        <% }) %>
+      <h2> Completed task </h2>
+        <% for( i = 0; i < complete.length; i++){ %>
+        <li><input type="radio" checked><%= complete[i] %> </li>
+        <% } %>
+      <button formaction="/removetask" type="submit"> Remove </button>
+</form>
+</div>
+</body>
+</html>

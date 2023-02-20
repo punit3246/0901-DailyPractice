@@ -5,6 +5,15 @@
     <link href="/styles.css" rel="stylesheet">
   </head>
 <body>
+  <style>
+    div{
+      background-color: aqua;
+      text-align: center;
+    }
+    li{
+      text-align: center;
+    }
+  </style>
   <div class="container">
 <h2> ToDo List App </h2>
 <form action ="/addtask" method="POST">
@@ -12,7 +21,7 @@
       <button> Add Task </button>
       <h2> Added Task </h2>
         <% for( i = 0; i < task.length; i++){ %>
-        <li><input type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
+        <li class="hi"><input type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
         <% } %>
       <h2> Completed task </h2>
         <% for( i = 0; i < complete.length; i++){ %>
