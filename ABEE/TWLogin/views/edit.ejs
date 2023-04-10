@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+<% results.forEach((result)=>{ %>
+<section  id="create">
+    <div class="heading">
+        <h1>Edit new Tweet</h1>
+    </div>
+    <div class="inside">
+        <form action="/updatedit" method='POST'>
+            <input name="title" placeholder="title" type="text" value="<%=result.title%>">
+              <input type="hidden" name="id" value="<%=result.id%>">
+              <input name="body" i value="<%= result.body %>">
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+
+
+</section>
+
+
+<% }) %>
+
+<%- include('partials/footer.ejs') %>
